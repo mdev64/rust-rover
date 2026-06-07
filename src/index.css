@@ -1,0 +1,111 @@
+/* ── Design Tokens (Light Theme) ── */
+:root {
+  /* Brand — Rust-inspired orange/brown */
+  --primary: #ce422b;
+  --primary-dark: #b33924;
+  --primary-light: #fde8e4;
+  --success: #059669;
+  --error: #dc2626;
+
+  /* Surfaces */
+  --bg: #f1f5f9;
+  --surface: #ffffff;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --border: #e2e8f0;
+
+  /* Quiz feedback */
+  --correct-bg: #f0fdf4;
+  --correct-border: #86efac;
+  --correct-text: #166534;
+  --wrong-bg: #fef2f2;
+  --wrong-border: #fca5a5;
+  --wrong-text: #991b1b;
+
+  /* Tip box */
+  --tip-bg: #fffbeb;
+  --tip-border: #fde68a;
+  --tip-accent: #f59e0b;
+  --tip-text: #78350f;
+
+  /* Info / revealed */
+  --info-bg: #eff6ff;
+  --info-border: #bfdbfe;
+  --info-text: #1e40af;
+}
+
+/* ── Dark Theme ── */
+[data-theme='dark'] {
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --text: #f1f5f9;
+  --text-light: #94a3b8;
+  --border: #334155;
+  --primary-light: #3d1c15;
+
+  --correct-bg: #052e16;
+  --correct-border: #166534;
+  --correct-text: #86efac;
+  --wrong-bg: #450a0a;
+  --wrong-border: #991b1b;
+  --wrong-text: #fca5a5;
+
+  --tip-bg: #1c1a0a;
+  --tip-border: #854d0e;
+  --tip-accent: #d97706;
+  --tip-text: #fef3c7;
+
+  /* Info / revealed */
+  --info-bg: #0c1a3b;
+  --info-border: #1e3a8a;
+  --info-text: #93c5fd;
+}
+
+/* ── Reset & Base ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  transition:
+    background 0.25s,
+    color 0.25s;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: 1.25;
+}
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+}
+button {
+  font-family: inherit;
+}

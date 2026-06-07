@@ -1,0 +1,58 @@
+name: Feature request
+description: Suggest a new lesson, quiz question, UI improvement, or any other enhancement
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea? Describe it below — be as specific as you can.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: What kind of feature is this?
+      options:
+        - New lesson
+        - New quiz question for an existing lesson
+        - UI / UX improvement
+        - Accessibility improvement
+        - Performance improvement
+        - Developer tooling / CI
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the motivation. What is currently missing or frustrating?
+      placeholder: "e.g. There's no lesson on Rust Router, so learners don't know how to add navigation to their apps."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe the feature you'd like to see.
+    validations:
+      required: true
+
+  - type: textarea
+    id: lesson_content
+    attributes:
+      label: Lesson / quiz content outline (if applicable)
+      description: |
+        If you're proposing a new lesson or quiz question, sketch the content here.
+        Remember: every quiz concept must be taught in that lesson's reading first.
+      placeholder: |
+        **Lesson title:** Rust Router Basics
+        **Concepts to cover:** BrowserRouter, Route, Link, useParams
+        **Sample quiz question:** …
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Links, references, mockups, or additional context.

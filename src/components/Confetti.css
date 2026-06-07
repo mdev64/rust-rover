@@ -1,0 +1,39 @@
+.confetti-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.confetti-piece {
+  position: absolute;
+  top: -12px;
+  border-radius: 2px;
+  animation: confetti-fall linear both;
+  opacity: 0;
+}
+
+.confetti-piece--circle {
+  border-radius: 50%;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(0) rotate(var(--rotate));
+    opacity: 1;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(110vh) rotate(calc(var(--rotate) + 720deg));
+    opacity: 0;
+  }
+}

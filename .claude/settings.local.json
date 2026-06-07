@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 *)",
+      "Bash(npm run *)",
+      "Bash(grep -n '`' /Users/madushanj/Documents/Codes/Learn/learn-rust/src/data/lessons.js)",
+      "Bash(grep -E '^[0-9]+:.*`.*`')",
+      "Bash(grep -n '^[[:space:]]*code:\\\\s`$' /Users/madushanj/Documents/Codes/Learn/learn-rust/src/data/lessons.js)"
+    ]
+  }
+}

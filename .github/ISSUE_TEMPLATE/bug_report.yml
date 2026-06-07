@@ -1,0 +1,68 @@
+name: Bug report
+description: Something is broken or behaving unexpectedly
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill in as much detail as you can.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+      placeholder: "e.g. Clicking 'Submit' on Lesson 3 quiz shows the wrong answer as correct."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Step-by-step instructions to reliably trigger the bug.
+      placeholder: |
+        1. Go to Lesson 3
+        2. Answer the first quiz question incorrectly
+        3. Click 'Show Answer'
+        4. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: What should have happened instead?
+    validations:
+      required: true
+
+  - type: input
+    id: lesson
+    attributes:
+      label: Affected lesson (if applicable)
+      placeholder: 'e.g. Lesson 5 — State with useState'
+
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Active theme
+      options:
+        - Light
+        - Dark
+        - Both / not theme-specific
+        - Not sure
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser & version
+      placeholder: 'e.g. Chrome 124, Safari 17, Firefox 125'
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context or screenshots
+      description: Paste screenshots, console errors, or anything else that might help.
