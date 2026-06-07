@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="RustRover — master Rust interactively, one challenge at a time."
+    />
+    <title>RustRover</title>
+    <!-- Apply theme before React paints to prevent flash -->
+    <script>
+      (function () {
+        var s = localStorage.getItem('rust-rover-theme');
+        var t =
+          s === 'light' || s === 'dark'
+            ? s
+            : window.matchMedia('(prefers-color-scheme: light)').matches
+              ? 'light'
+              : 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-BbvfuR99.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-91VHdSRH.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

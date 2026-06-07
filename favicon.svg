@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 106">
+  <!-- Outer gear ring -->
+  <circle cx="53" cy="53" r="46" fill="none" stroke="#ce422b" stroke-width="3"/>
+  <!-- Gear teeth -->
+  <circle cx="53" cy="53" r="46" fill="none" stroke="#ce422b" stroke-width="6" stroke-dasharray="8 10"/>
+  <!-- Inner circle -->
+  <circle cx="53" cy="53" r="36" fill="none" stroke="#ce422b" stroke-width="2"/>
+  <!-- R letter -->
+  <text x="53" y="53" text-anchor="middle" dominant-baseline="central" fill="#ce422b" font-size="42" font-weight="bold" font-family="serif">R</text>
+</svg>
